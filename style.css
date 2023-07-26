@@ -6,7 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-	  background: #1c2e4a;
+	  background: #009dc4;
   }
   canvas {
     position: absolute;
@@ -19,26 +19,35 @@ body {
     width: 50%;
     height: 100vh;
     background-color: #f9f9f9;
-    opacity: 0.5;
+    opacity: 0.1;
     position: absolute;
     left: 0;
     text-align: center;
     justify-content: center;
     
   }
-  h1{
-    text-align: center;
-  }
+
   #duyurular {
     top: 25%;
-    left: 13%;
+    left: 5%;
     position: absolute;
-    width: 25%;
+    width: 40%;
     background: #f9f9f9;
     justify-content: center;
     border-radius:10px;    
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    padding-bottom: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+    height: 500px;
+    overflow-y: auto;
+  }
+  #duyurular li {
+    padding-top: 15px;
+  }
+  #duyurular h1 {
+    position: sticky;
+    text-align: center;
+    top: 0;
   }
   .container {
     position: absolute;
