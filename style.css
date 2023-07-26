@@ -26,28 +26,47 @@ body {
     justify-content: center;
     
   }
+  /* Dikey kaydırma çubuğu stilleri */
+  #duyurular::-webkit-scrollbar {
+    width: 6px;
+    background-color: #f9f9f9;
+  }
 
+  #duyurular::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 3px;
+  }
+
+  /* Kaydırma çubuğu üzerine gelindiğinde stil */
+  #duyurular::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
   #duyurular {
-    top: 25%;
+    top: 20%;
     left: 5%;
     position: absolute;
     width: 40%;
     background: #f9f9f9;
     justify-content: center;
-    border-radius:10px;    
+    border-radius: 10px;    
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     margin-bottom: 50px;
-    padding: 10px;
-    height: 500px;
+    padding: 20px;
+    height: 580px;
     overflow-y: auto;
   }
   #duyurular li {
     padding-top: 15px;
   }
-  #duyurular h1 {
-    position: sticky;
+  #logo_pbs {
+    top: 20%;
+    left: 5%;
+    position: absolute;
+    width: 40%;
+    background: #f9f9f9;
+    justify-content: center;
     text-align: center;
-    top: 0;
+    border-radius: 10px;  
   }
   .container {
     position: absolute;
