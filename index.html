@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Sayfası</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <script src="script.js"></script>
+  <img id="logo_pbs"src="./images/logo_pbs.png" alt="">
+  <div class="container">    
+    <form class="login-form">
+      <div id="img-container">
+        <img id="logo_ab" src="https://pgm.adalet.gov.tr/Assets/front/images/logo.png"/>
+      </div>
+      <div class="input-field">
+        <i class="fas fa-user"></i>
+        <input type="text" placeholder="Sicil No" required>
+      </div>
+      <div class="input-field">
+        <i class="fas fa-lock"></i>
+        <input type="password" placeholder="Şifre" required>
+      </div>
+      <div class="input-field captcha">
+        <i class="fas fa-shield-alt"></i>
+        <input type="text" placeholder="Captcha" required>
+      </div>
+      <button type="submit">Giriş Yap</button>
+      <a href="#"><label>Şifremi Unuttum!</label></a>
+    </form>
+  </div>
+  <footer>By Nasuhan Yunus Özkaya</footer>
+</body>
+</html>

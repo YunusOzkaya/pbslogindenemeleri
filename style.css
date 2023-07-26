@@ -1,0 +1,112 @@
+body {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+	background: #1c2e4a;
+  }
+  canvas {
+    position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	z-index: -1;
+  }
+  .container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius:10px;    
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .login-form h1 {
+    margin-bottom: 30px;
+  }
+  
+  .input-field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-field i {
+    position: relative;
+    margin-right: 15px;
+    color: #aaa;
+  }
+  
+  .input-field input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+  }
+  
+  .captcha-text {
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  #img-container {
+    margin-bottom: 15%;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 100%;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+  }
+  a {
+    padding: 15px;
+    margin-top: 15px;
+    color: #333;
+    text-decoration: none; 
+  }
+  
+  a:hover {
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); 
+    color: #555; 
+    border-radius: 10px;
+  }
+  label:hover {
+    cursor: pointer;
+  }
+  #logo_pbs {
+    position: absolute;
+    top: 50px;
+    width: 25%;
+  }
+
+  footer {
+    color: #f9f9f9;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+  }
