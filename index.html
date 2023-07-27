@@ -1,50 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PBS Giriş Sayfası</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <canvas id="canvas"></canvas>
-  <script src="script.js"></script>
-  <div id="left_container">    
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PBS Giriş</title>
+  </head>
+  <body>
+    <div class="canvas-container">
+      <canvas id="canvas"></canvas>
+      <script src="script.js"></script>
     </div>
-    
-    <div id="duyurular">
-      <h1>LOGO</h1>
-      <h3 style="position: sticky; font-family: Arial, Helvetica, sans-serif; color: #1e1e1e;">Duyurular</h3>
-      <hr>
-      <ul>
-        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi erat neque, tincidunt nec euismod sed, laoreet in magna. Donec sit amet orci tincidunt, vulputate dolor quis, tristique velit. Sed sem ante, ultrices eu suscipit vitae, eleifend vel diam. Aenean sit amet nunc ut elit auctor efficitur quis vel nulla. Pellentesque quis pharetra lacus. Mauris scelerisque scelerisque felis, non porttitor urna suscipit ac. Curabitur sodales dictum est, id dictum justo tempor sed. Nulla faucibus elementum lectus, quis placerat lectus suscipit at. Suspendisse aliquam sapien vel libero suscipit, quis facilisis metus pretium. Etiam accumsan eu lectus eget mattis.</li>
-        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi erat neque, tincidunt nec euismod sed, laoreet in magna. Donec sit amet orci tincidunt, vulputate dolor quis, tristique velit. Sed sem ante, ultrices eu suscipit vitae, eleifend vel diam. Aenean sit amet nunc ut elit auctor efficitur quis vel nulla. Pellentesque quis pharetra lacus. Mauris scelerisque scelerisque felis, non porttitor urna suscipit ac. Curabitur sodales dictum est, id dictum justo tempor sed. Nulla faucibus elementum lectus, quis placerat lectus suscipit at. Suspendisse aliquam sapien vel libero suscipit, quis facilisis metus pretium. Etiam accumsan eu lectus eget mattis.</li>
-        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi erat neque, tincidunt nec euismod sed, laoreet in magna. Donec sit amet orci tincidunt, vulputate dolor quis, tristique velit. Sed sem ante, ultrices eu suscipit vitae, eleifend vel diam. Aenean sit amet nunc ut elit auctor efficitur quis vel nulla. Pellentesque quis pharetra lacus. Mauris scelerisque scelerisque felis, non porttitor urna suscipit ac. Curabitur sodales dictum est, id dictum justo tempor sed. Nulla faucibus elementum lectus, quis placerat lectus suscipit at. Suspendisse aliquam sapien vel libero suscipit, quis facilisis metus pretium. Etiam accumsan eu lectus eget mattis.</li>
-        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi erat neque, tincidunt nec euismod sed, laoreet in magna. Donec sit amet orci tincidunt, vulputate dolor quis, tristique velit. Sed sem ante, ultrices eu suscipit vitae, eleifend vel diam. Aenean sit amet nunc ut elit auctor efficitur quis vel nulla. Pellentesque quis pharetra lacus. Mauris scelerisque scelerisque felis, non porttitor urna suscipit ac. Curabitur sodales dictum est, id dictum justo tempor sed. Nulla faucibus elementum lectus, quis placerat lectus suscipit at. Suspendisse aliquam sapien vel libero suscipit, quis facilisis metus pretium. Etiam accumsan eu lectus eget mattis.</li>
-      </ul>
-  </div>
-  <div class="container">    
-    <form class="login-form">
-      <div id="img-container">
-        <img id="logo_ab" src="https://pgm.adalet.gov.tr/Assets/front/images/logo.png"/>
+    <div class="login-container">
+      <div class="logo">
+        <img src="./images/logo_pbs.png" />
       </div>
-      <div class="input-field">
-        <i class="fas fa-user"></i>
-        <input type="text" placeholder="Sicil No" required>
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="">
+              <h4 class="text-center">Giriş Yapınız</h4>
+              <p class="text-center">
+                Lütfen sicil numaranızı başında "ab" olmadan giriniz.
+              </p>
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <input
+                    style="border: black solid 1px"
+                    type="text"
+                    class="form-control"
+                    placeholder="Sicil No"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    style="border: black solid 1px"
+                    type="password"
+                    class="form-control"
+                    placeholder="Şifre"
+                    required
+                  />
+                </div>
+                <div id="captcha" class="form-group">
+                  <input
+                    style="border: black solid 1px"
+                    type="text"
+                    class="form-control"
+                    placeholder="captcha buraya gelecek"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    style="border: black solid 1px"
+                    type="text"
+                    class="form-control"
+                    placeholder="Yukarıdaki güvenlik sorusunun cevabını verin"
+                    required
+                  />
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                  Giriş Yap
+                </button>
+                <a href="#"><p class="text-center mt-2">Şifremi Unuttum!</p></a>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="input-field">
-        <i class="fas fa-lock"></i>
-        <input type="password" placeholder="Şifre" required>
-      </div>
-      <div class="input-field captcha">
-        <i class="fas fa-shield-alt"></i>
-        <input type="text" placeholder="Captcha" required>
-      </div>
-      <button type="submit">Giriş Yap</button>
-      <a href="#"><label>Şifremi Unuttum!</label></a>
-    </form>
-  </div>
-  <footer>By Nasuhan Yunus Özkaya</footer>
-</body>
+    </div>
+  </body>
 </html>
