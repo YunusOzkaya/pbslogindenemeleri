@@ -28,6 +28,8 @@ body {
   }
   /* Dikey kaydırma çubuğu stilleri */
   #duyurular::-webkit-scrollbar {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
     width: 6px;
     background-color: #f9f9f9;
   }
@@ -35,6 +37,7 @@ body {
   #duyurular::-webkit-scrollbar-thumb {
     background-color: #888;
     border-radius: 3px;
+
   }
 
   /* Kaydırma çubuğu üzerine gelindiğinde stil */
@@ -51,22 +54,21 @@ body {
     border-radius: 10px;    
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     margin-bottom: 50px;
-    padding: 20px;
+    padding:0 20px 20px 20px;
     height: 580px;
     overflow-y: auto;
   }
   #duyurular li {
     padding-top: 15px;
   }
-  #logo_pbs {
-    top: 20%;
-    left: 5%;
-    position: absolute;
-    width: 40%;
-    background: #f9f9f9;
-    justify-content: center;
+  #duyurular h1 {
+    padding-top: 20px;
+    position: sticky;
     text-align: center;
-    border-radius: 10px;  
+    width: 100%;
+    height: 50px;
+    top: 0;
+    background-color: #f9f9f9;
   }
   .container {
     position: absolute;
