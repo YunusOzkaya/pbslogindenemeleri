@@ -1,171 +1,60 @@
-body {
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+@media screen and (min-width:768px) {
+  
+  body {
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-	  background: #009dc4;
-  }
-  canvas {
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-  #left_container {
-    width: 50%;
     height: 100vh;
     background-color: #f9f9f9;
-    opacity: 0.1;
-    position: absolute;
-    left: 0;
-    text-align: center;
-    justify-content: center;
-    
+    overflow: hidden;
   }
-  /* Dikey kaydırma çubuğu stilleri */
-  #duyurular::-webkit-scrollbar {
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-    width: 6px;
-    background-color: #f9f9f9;
-  }
-
-  #duyurular::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 3px;
-
-  }
-
-  /* Kaydırma çubuğu üzerine gelindiğinde stil */
-  #duyurular::-webkit-scrollbar-thumb:hover {
-    background-color: #555;
-  }
-  #duyurular {
-    top: 20%;
-    left: 5%;
-    position: absolute;
-    width: 40%;
-    background: #f9f9f9;
-    justify-content: center;
-    border-radius: 10px;    
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    margin-bottom: 50px;
-    padding:0 20px 20px 20px;
-    height: 580px;
-    overflow-y: auto;
-  }
-  #duyurular li {
-    padding-top: 15px;
-  }
-  #duyurular h1 {
-    padding-top: 20px;
-    position: sticky;
-    text-align: center;
-    width: 100%;
-    height: 50px;
-    top: 0;
-    background-color: #f9f9f9;
-  }
-  .container {
-    position: absolute;
-    background-color: #fff;
-    padding: 40px;
-    border-radius:10px;    
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    right:15%
-
-    }
   
-  .login-form {
+  .login-container {
+    flex: 1;
+    background-color: #f9f9f9;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    justify-content: center;
   }
   
-  .login-form h1 {
-    margin-bottom: 30px;
-  }
-  
-  .input-field {
+  .canvas-container {
+    margin-left: -25%;
+    margin-top: -25%;
+    margin-bottom: -12%;
+    border-radius: 70%;
+    width: 80%;
+    flex: 1;
+    background-color: #003c98;
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    padding: 15px;
+    text-align: center;
+  }
+}
+@media screen and (max-width:768px){
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
     background-color: #f9f9f9;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
   }
-  
-  .input-field i {
-    position: relative;
-    margin-right: 15px;
-    color: #aaa;
-  }
-  
-  .input-field input {
-    border: none;
-    outline: none;
-    background-color: transparent;
-    width: 100%;
-  }
-  
-  .captcha-text {
-    margin-left: 15px;
-    font-weight: bold;
-    font-size: 18px;
-  }
-  
-  button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    outline: none;
-    padding: 15px 30px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  #img-container {
-    margin-bottom: 15%;
-    padding: 15px;
+  .login-container {
+    flex: 1;
     background-color: #f9f9f9;
-    border-radius: 100%;
-    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  a {
-    padding: 15px;
-    margin-top: 15px;
-    color: #333;
-    text-decoration: none; 
+  canvas {
+    display: none;
   }
-  
-  a:hover {
-    cursor: pointer;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); 
-    color: #555; 
-    border-radius: 10px;
+  .canvas-container{
+    display: none;
   }
-  label:hover {
-    cursor: pointer;
-  }
-  #logo_pbs {
-    position: absolute;
-    top: 50px;
-    width: 25%;
-  }
-
-  footer {
-    color: #f9f9f9;
-    position: absolute;
-    bottom: 5%;
-    right: 5%;
-  }
+}
